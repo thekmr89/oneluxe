@@ -1,0 +1,1493 @@
+/* ==========================================================================
+   RESPONSIVE FIXES - Tablet & Mobile
+   Loaded after all other stylesheets. Desktop styles remain untouched.
+   ========================================================================== */
+
+/* ==========================================================================
+   TABLET / IPAD (768px - 1024px)
+   ========================================================================== */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+
+    /* --- Header / Navigation --- */
+    .menu-bg {
+        position: fixed !important;
+        z-index: 100 !important;
+    }
+
+    .logo {
+        width: 30% !important;
+    }
+
+    .left {
+        width: 12% !important;
+    }
+
+    .header-logo img {
+        width: 120px !important;
+    }
+
+    .contact {
+        font-size: 13px !important;
+        padding: 5px 8px !important;
+        height: 40px !important;
+    }
+
+    /* --- Hero Banner --- */
+    .banner {
+        height: 45vw !important;
+    }
+
+    .hero-title h2 {
+        font-size: 3.5rem !important;
+    }
+
+    .text-video {
+        top: 35% !important;
+        left: 10% !important;
+        right: 10% !important;
+    }
+
+    .text-video h1 {
+        font-size: 50px !important;
+    }
+
+    .home-banner span {
+        font-size: 2rem !important;
+    }
+
+    /* --- Video Section --- */
+    video#video-slider-1 {
+        height: auto !important;
+        min-height: 50vw;
+        object-fit: cover;
+    }
+
+    /* --- Trips / Content Sections --- */
+    .trips-text {
+        width: 85% !important;
+    }
+
+    .trips-text h1 {
+        font-size: 2.5em !important;
+    }
+
+    .trips-text1 {
+        width: 95% !important;
+    }
+
+    .trips-text1 h1 {
+        font-size: 2.5em !important;
+    }
+
+    .trips-text1 span {
+        font-size: 2.2rem !important;
+    }
+
+    /* --- Why Choose / Features Grid --- */
+    .why-choose {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .why-choose img {
+        width: 55px !important;
+    }
+
+    .why-choose h4 {
+        font-size: 16px !important;
+    }
+
+    .why-choose p {
+        font-size: 14px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* --- Services Section --- */
+    .div-services-1 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .inner_img_text1 {
+        position: relative !important;
+        padding: 20px 15px !important;
+    }
+
+    .owl-carousel1 .desti-img .card {
+        height: 350px !important;
+    }
+
+    .offer-slider-btn-expele {
+        height: auto !important;
+    }
+
+    /* --- Testimonial Carousel --- */
+    .carousel {
+        width: 100% !important;
+    }
+
+    .carousel-control-prev {
+        right: 15rem !important;
+    }
+
+    .carousel-control-next {
+        left: 15rem !important;
+    }
+
+    .testi_main_box p {
+        padding: 0px 40px !important;
+    }
+
+    .testi_main_box h4 {
+        font-size: 24px !important;
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+
+    /* --- About Page Sections --- */
+    .about-text {
+        width: 90% !important;
+    }
+
+    .about_main {
+        min-height: auto !important;
+        width: 95% !important;
+    }
+
+    .about_main2 {
+        min-height: auto !important;
+        max-height: none !important;
+        position: relative !important;
+        right: auto !important;
+        padding: 25px 20px !important;
+    }
+
+    .about_main3 {
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 15px !important;
+    }
+
+    .about_main4 {
+        min-height: auto !important;
+        max-height: none !important;
+        position: relative !important;
+        right: auto !important;
+        padding: 25px 20px !important;
+    }
+
+    .about_main5 {
+        min-height: auto !important;
+        position: relative !important;
+        left: auto !important;
+        padding: 25px 20px !important;
+    }
+
+    .about-img2 {
+        min-height: auto !important;
+    }
+
+    .about-img2 img {
+        height: auto !important;
+    }
+
+    .about-img1 img {
+        height: auto !important;
+    }
+
+    .about-img4 {
+        position: relative !important;
+        left: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .about-img4 img {
+        height: auto !important;
+    }
+
+    .meet_team {
+        max-height: none !important;
+        height: auto !important;
+    }
+
+    /* --- Texti / Content Sections --- */
+    .texti-section .texti-inner {
+        padding: 25px 30px !important;
+        top: 0px !important;
+    }
+
+    .texti-section img {
+        min-height: auto !important;
+        border-radius: 30px !important;
+        padding: 10px !important;
+    }
+
+    /* --- Destination Cards --- */
+    .desti-img {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .dest-heading {
+        padding: 30px 0px 25px 0px !important;
+    }
+
+    /* --- Contact Form (hero.min.css .form) --- */
+    .form {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .form .inner-f {
+        padding: 30px !important;
+    }
+
+    .inner-f h3 {
+        font-size: 2.5em !important;
+    }
+
+    /* --- Footer Newsletter --- */
+    .news-latter {
+        padding: 40px 20px !important;
+    }
+
+    .news-cont {
+        font-size: 18px !important;
+    }
+
+    .form-inline .form-group {
+        width: 48% !important;
+    }
+
+    /* --- Footer Main --- */
+    .footers {
+        padding: 30px 15px 0px 15px !important;
+    }
+
+    .footer-logo img {
+        width: 100px !important;
+    }
+
+    .f-heading {
+        margin-top: 15px;
+    }
+
+    /* --- Copyright Bar --- */
+    .copywrite .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copy-itm {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    .copy-itm .list-itm span {
+        padding-left: 10px !important;
+        font-size: 12px !important;
+    }
+
+    /* --- Cookie Bar --- */
+    .cook {
+        padding: 8px 20px !important;
+    }
+
+    .cookie {
+        flex-wrap: wrap !important;
+    }
+
+    .cookie .cookie-p {
+        flex: 1 1 100%;
+        margin-bottom: 8px;
+    }
+
+    .cookie .cookie-p p {
+        font-size: 13px !important;
+    }
+
+    /* --- Marquee Section --- */
+    .marquee {
+        height: 150px !important;
+    }
+
+    .track .content {
+        font-size: 90px !important;
+        margin: 30px !important;
+    }
+
+    /* --- Blog Page --- */
+    .blog-content .blog-t {
+        font-size: 0.9rem !important;
+    }
+
+    /* --- Tabs Section (Destinations) --- */
+    ul#tabs-nav li {
+        font-size: 28px !important;
+        padding: 5px 40px !important;
+    }
+
+    .slider_tab img {
+        height: 450px !important;
+    }
+
+    /* --- Inspired Section / Boxes --- */
+    .inspired_box {
+        height: 350px !important;
+        margin-bottom: 15px;
+    }
+
+    /* --- Service Box --- */
+    .serviceBox {
+        margin-bottom: 25px !important;
+    }
+
+    /* --- Responsible Travel --- */
+    .res-trav {
+        max-height: 60vh !important;
+    }
+
+    /* --- Little Inspiration --- */
+    .litt-trav,
+    .litt-trav img {
+        height: 200px !important;
+    }
+
+    .trav-video {
+        height: 300px !important;
+    }
+
+    /* --- Payment Form --- */
+    .pay-form-section input,
+    .pay-form-section select,
+    .pay-form-section textarea {
+        width: 100% !important;
+    }
+
+    /* --- Privacy Policy Tabs --- */
+    .privacy-tabs .nav-link {
+        font-size: 14px !important;
+        padding: 8px 12px !important;
+    }
+
+    /* --- Group Affiliations Carousel (footer) --- */
+    .inspired_slider1 .item img {
+        max-height: 60px;
+        object-fit: contain;
+    }
+
+    /* --- Pakage Text --- */
+    .pakage-text {
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+        padding: 15px 20px !important;
+    }
+
+    .pakage-text h1 {
+        font-size: 28px !important;
+    }
+
+    .pakage-text h4 {
+        font-size: 18px !important;
+    }
+}
+
+
+/* ==========================================================================
+   MOBILE (max-width: 767px)
+   ========================================================================== */
+@media only screen and (max-width: 767px) {
+
+    /* --- Overflow Prevention --- */
+    html, body {
+        overflow-x: hidden !important;
+    }
+
+    .container-fluid,
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* --- Header / Navigation --- */
+    .menu-bg {
+        position: fixed !important;
+        z-index: 100 !important;
+    }
+
+    .navbar {
+        padding: 5px 0 !important;
+    }
+
+    .logo {
+        width: 40% !important;
+    }
+
+    .header-logo img {
+        width: 100px !important;
+    }
+
+    .left {
+        width: 15% !important;
+        justify-content: flex-end !important;
+    }
+
+    .contact {
+        display: none !important;
+    }
+
+    .FrBrighShw {
+        width: 30px !important;
+        height: 40px !important;
+    }
+
+    /* --- Full-screen Menu Overlay --- */
+    .mainu {
+        width: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    .mainu .inner-mainu {
+        width: 300vw !important;
+        height: 300vw !important;
+    }
+
+    .mainu .inner-mainu .main-menu > ul > li {
+        font-size: 1.1rem !important;
+        padding: 0.5rem !important;
+    }
+
+    .list-mainu .list a {
+        font-size: 16px !important;
+    }
+
+    /* --- Hero Banner --- */
+    .banner {
+        height: 60vw !important;
+    }
+
+    .hero-title h2 {
+        font-size: 2rem !important;
+        line-height: 1em !important;
+    }
+
+    .text-video {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 90% !important;
+        right: auto !important;
+    }
+
+    .text-video h1 {
+        font-size: 28px !important;
+    }
+
+    .text-video p {
+        font-size: 14px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .home-banner span {
+        font-size: 1.2rem !important;
+        line-height: 1.4 !important;
+    }
+
+    /* --- Video Section --- */
+    video#video-slider-1 {
+        height: 60vh !important;
+        object-fit: cover !important;
+    }
+
+    .video img {
+        height: 50vh !important;
+        object-fit: cover !important;
+    }
+
+    /* --- Trips / Content Sections --- */
+    .trips-text {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+
+    .trips-text h1 {
+        font-size: 1.8em !important;
+        margin-bottom: 15px !important;
+    }
+
+    .trips-text p {
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
+        padding-top: 10px !important;
+    }
+
+    .trips-text h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    .trips-bg {
+        padding: 20px 0 30px 0 !important;
+    }
+
+    .trips-text1 {
+        width: 100% !important;
+        padding-top: 30px !important;
+    }
+
+    .trips-text1 h1 {
+        font-size: 2em !important;
+    }
+
+    .trips-text1 span {
+        font-size: 1.8rem !important;
+        padding-bottom: 20px !important;
+    }
+
+    /* --- Typography --- */
+    p {
+        font-size: 1rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+        margin: 25px 0 15px !important;
+    }
+
+    /* --- Why Choose / Features Grid --- */
+    .why-choose {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .why-choose img {
+        width: 50px !important;
+    }
+
+    .why-choose h4 {
+        font-size: 15px !important;
+    }
+
+    .why-choose p {
+        font-size: 13px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .why-choose h1 {
+        font-size: 22px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .why-choose h3 {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* --- Services Section (Home page) --- */
+    .div-services-1 {
+        padding: 30px 10px !important;
+    }
+
+    .inner_img_text1 {
+        position: relative !important;
+        padding: 20px 10px !important;
+        bottom: auto !important;
+    }
+
+    .inner_img_text1 h2 {
+        font-size: 1.5rem !important;
+        margin: 15px 0 10px !important;
+    }
+
+    .owl-carousel1 .desti-img .card {
+        height: 300px !important;
+    }
+
+    .owl-carousel1 .desti-img .card img {
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .offer-slider-btn-expele {
+        height: auto !important;
+        bottom: 0px !important;
+        margin: 0px 10px !important;
+    }
+
+    .offer-slider-btn-expele h2 {
+        font-size: 18px !important;
+        margin: 20px 0 0 !important;
+    }
+
+    .owl-carousel1 .offer-slider-btn-expele {
+        bottom: 0px !important;
+    }
+
+    /* --- Destination Cards --- */
+    .desti-img {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .desti-img img {
+        max-height: 300px !important;
+    }
+
+    .dest-heading {
+        padding: 20px 0px 15px 0px !important;
+    }
+
+    .dest-heading h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .desti-img span {
+        font-size: 18px !important;
+    }
+
+    /* --- Texti / Content Sections --- */
+    .texti-section .texti-inner {
+        padding: 15px 10px !important;
+        position: relative !important;
+        top: 0px !important;
+        bottom: auto !important;
+    }
+
+    .texti-section .texti-inner h2 {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+        font-size: 1.3rem !important;
+    }
+
+    .texti-section img {
+        min-height: auto !important;
+        border-radius: 20px !important;
+        padding: 5px !important;
+    }
+
+    /* --- Testimonial Carousel --- */
+    .carousel {
+        width: 100% !important;
+    }
+
+    .carousel .carousel-item {
+        min-height: 280px !important;
+    }
+
+    .carousel-control-prev {
+        right: auto !important;
+        left: 10px !important;
+    }
+
+    .carousel-control-next {
+        left: auto !important;
+        right: 10px !important;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: auto !important;
+        bottom: 10px !important;
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .testi_main_box p {
+        padding: 0px 10px !important;
+        font-size: 14px !important;
+    }
+
+    .testi_main_box h4 {
+        font-size: 20px !important;
+        line-height: 28px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .testi_desination h5 {
+        font-size: 16px !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .carousel-item .card {
+        width: 80% !important;
+    }
+
+    /* --- Marquee --- */
+    .marquee {
+        height: 100px !important;
+    }
+
+    .track .content {
+        font-size: 60px !important;
+        margin: 15px !important;
+    }
+
+    /* --- About Page --- */
+    .about-text {
+        width: 100% !important;
+    }
+
+    .about-cont {
+        padding: 30px 0 0px 0 !important;
+    }
+
+    .about-cont .container {
+        padding-top: 20px !important;
+    }
+
+    .about_main {
+        min-height: auto !important;
+        width: 100% !important;
+        padding-top: 20px !important;
+    }
+
+    .about_main1 {
+        padding: 15px 10px !important;
+        width: 100% !important;
+    }
+
+    .about_main2 {
+        min-height: auto !important;
+        max-height: none !important;
+        position: relative !important;
+        right: auto !important;
+        padding: 20px 15px !important;
+        display: block !important;
+    }
+
+    .about_main3 {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        padding: 15px 10px !important;
+        position: relative !important;
+        bottom: auto !important;
+    }
+
+    .about_main4 {
+        min-height: auto !important;
+        max-height: none !important;
+        width: 100% !important;
+        position: relative !important;
+        right: auto !important;
+        padding: 20px 15px !important;
+    }
+
+    .about_main5 {
+        min-height: auto !important;
+        position: relative !important;
+        left: auto !important;
+        padding: 20px 15px !important;
+    }
+
+    .about-img2 {
+        min-height: auto !important;
+        padding-left: 0px !important;
+        padding-top: 0px !important;
+    }
+
+    .about-img2 img {
+        height: auto !important;
+    }
+
+    .about-img1 img {
+        height: auto !important;
+    }
+
+    .about-img4 {
+        position: static !important;
+        left: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .about-img4 img {
+        height: auto !important;
+    }
+
+    .meet_team {
+        max-height: none !important;
+        height: auto !important;
+        padding: 20px 0 !important;
+    }
+
+    .about-h h2 {
+        font-size: 2rem !important;
+    }
+
+    .innner-content {
+        overflow: visible !important;
+    }
+
+    /* --- Contact Page / Form --- */
+    .form {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        width: 100% !important;
+        margin-top: 15px;
+    }
+
+    .form .inner-f {
+        padding: 25px 15px !important;
+    }
+
+    .inner-f h3 {
+        font-size: 2em !important;
+    }
+
+    .inner-f .col-sm-6 {
+        padding-bottom: 10px !important;
+    }
+
+    .btn-1 {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        width: 100%;
+    }
+
+    .contact-s {
+        padding: 15px 0 15px 10px !important;
+    }
+
+    .contact-s i {
+        width: 50px !important;
+        height: 50px !important;
+        line-height: 48px !important;
+        font-size: 30px !important;
+    }
+
+    .contact-form {
+        padding: 20px 15px !important;
+    }
+
+    .contact-map {
+        padding: 5px !important;
+        margin-bottom: 15px;
+    }
+
+    /* --- Footer Newsletter --- */
+    .news-latter {
+        padding: 30px 15px !important;
+    }
+
+    .news-cont {
+        font-size: 17px !important;
+        line-height: 28px !important;
+    }
+
+    .news-desc.news-cont {
+        margin-bottom: 15px;
+    }
+
+    .form-inline {
+        flex-direction: column !important;
+    }
+
+    .form-inline .form-group {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .btn-2 {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+    .checkbox {
+        flex-wrap: wrap !important;
+    }
+
+    .checkbox p {
+        font-size: 0.85rem !important;
+    }
+
+    /* --- Footer Main --- */
+    .footers {
+        padding: 25px 15px 0px 15px !important;
+    }
+
+    .footer-logo img {
+        width: 90px !important;
+    }
+
+    .ali-center {
+        text-align: center !important;
+    }
+
+    .f-heading {
+        margin-top: 20px !important;
+    }
+
+    .f-list-item .list-item a {
+        font-size: 14px !important;
+    }
+
+    .social {
+        justify-content: center !important;
+    }
+
+    /* --- Copyright Bar --- */
+    .copywrite .row {
+        text-align: center;
+    }
+
+    .copy-itm {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding-left: 0 !important;
+    }
+
+    .copy-itm .list-itm span {
+        padding-left: 8px !important;
+        font-size: 12px !important;
+    }
+
+    .footer-cent {
+        justify-content: center !important;
+        margin-bottom: 5px;
+    }
+
+    /* --- Cookie Bar --- */
+    .cook {
+        padding: 10px 12px !important;
+    }
+
+    .cookie {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .cookie .cookie-p {
+        margin-bottom: 10px;
+    }
+
+    .cookie .cookie-p p {
+        font-size: 12px !important;
+        text-align: center !important;
+    }
+
+    .cookie-btn {
+        margin-bottom: 5px;
+    }
+
+    .cookie-btn a {
+        font-size: 12px !important;
+        padding: 5px 12px !important;
+    }
+
+    /* --- Services Page --- */
+    .about_main2,
+    .about_main4,
+    .about_main5 {
+        min-height: auto !important;
+        max-height: none !important;
+        position: relative !important;
+        right: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        padding: 20px 15px !important;
+    }
+
+    .inner_sect {
+        flex-direction: column !important;
+    }
+
+    .about-img1 {
+        width: 100% !important;
+    }
+
+    /* --- Tabs (Destinations/About) --- */
+    .tabs {
+        display: block !important;
+    }
+
+    ul#tabs-nav {
+        width: 100% !important;
+        padding-top: 15px !important;
+    }
+
+    ul#tabs-nav li {
+        font-size: 20px !important;
+        padding: 5px 15px !important;
+        line-height: 28px !important;
+    }
+
+    #tabs-content {
+        width: 100% !important;
+    }
+
+    .slider_tab img {
+        height: auto !important;
+    }
+
+    p.desination_text {
+        margin-left: 10px !important;
+        padding-bottom: 12px !important;
+        font-size: 1.1rem !important;
+    }
+
+    /* --- Inspired Boxes --- */
+    .inspired_box {
+        height: 280px !important;
+        margin-bottom: 15px;
+    }
+
+    .inspired_box .content {
+        padding: 0 15px !important;
+    }
+
+    .inspired_box .content h3 {
+        font-size: 20px !important;
+        line-height: 26px !important;
+    }
+
+    /* --- Blog Page --- */
+    .blog-content .blog-t {
+        font-size: 0.85rem !important;
+    }
+
+    .blog-content .category {
+        padding: 5px 0 !important;
+    }
+
+    /* --- Responsible Travel --- */
+    .trips-top {
+        padding: 30px 0 15px 0 !important;
+    }
+
+    .res-trav {
+        max-height: 50vh !important;
+    }
+
+    .res-inner img {
+        margin-bottom: 10px;
+    }
+
+    /* --- Little Inspiration --- */
+    .litt-trav,
+    .litt-trav img {
+        height: 180px !important;
+    }
+
+    .trav-video {
+        height: 250px !important;
+    }
+
+    .trav-video2 {
+        height: 200px !important;
+    }
+
+    .litt-videos h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .exper-cont {
+        padding-top: 0px !important;
+    }
+
+    .content {
+        padding: 15px 15px 0 15px !important;
+    }
+
+    /* --- Payment Page --- */
+    .pay-form-section {
+        padding: 20px 10px !important;
+    }
+
+    /* --- Privacy Policy --- */
+    .privacy-tabs .nav-link {
+        font-size: 12px !important;
+        padding: 6px 8px !important;
+    }
+
+    .privacy-tabs {
+        flex-wrap: wrap !important;
+    }
+
+    /* --- Pakage Section --- */
+    .pakage-text {
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        padding: 12px 8px !important;
+        bottom: 15px !important;
+        margin-top: -25px !important;
+    }
+
+    .pakage-text h1 {
+        font-size: 22px !important;
+    }
+
+    .pakage-text h4 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    /* --- Group Affiliations Carousel --- */
+    .inspired_slider1 .item img {
+        max-height: 45px;
+        object-fit: contain;
+    }
+
+    .client-logo-bg {
+        padding: 25px 0 30px 0 !important;
+    }
+
+    .group-aff h3 {
+        font-size: 1.2rem !important;
+    }
+
+    /* --- Service Box --- */
+    .serviceBox {
+        margin-bottom: 15px !important;
+    }
+
+    .serviceBox .title {
+        font-size: 16px !important;
+    }
+
+    .serviceBox .description {
+        margin: 0 8px 10px 8px !important;
+    }
+
+    /* --- Scroll To Top Button --- */
+    .btn-top {
+        bottom: 20px !important;
+        right: 15px !important;
+        height: 35px !important;
+        width: 35px !important;
+    }
+
+    .btn-visible {
+        right: 15px !important;
+    }
+
+    /* --- Owl Carousel General --- */
+    .owl-prev,
+    .owl-next {
+        width: auto !important;
+        height: auto !important;
+        font-size: 30px !important;
+    }
+
+    .owl-nav {
+        margin-top: 10px !important;
+    }
+
+    /* --- Popup Modals --- */
+    .PopShwMnVriBkle .SurciseSecSwn,
+    .PopShwMnVriBklehmshw .SurciseSecSwn {
+        width: 90% !important;
+        max-width: 350px !important;
+    }
+
+    /* --- Border Line Decorations --- */
+    .border_line1 {
+        width: 250px !important;
+    }
+
+    .border_line1 span {
+        font-size: 16px !important;
+        padding: 6px 10px !important;
+    }
+
+    /* --- Adventures Section --- */
+    .adventure {
+        padding: 25px 10px !important;
+    }
+
+    .adventure h3 {
+        font-size: 22px !important;
+    }
+
+    .adventure h5 {
+        font-size: 16px !important;
+        line-height: 22px !important;
+    }
+
+    /* --- Inline Padding Fixes for Common Layout Issues --- */
+    .img-respo {
+        padding: 5px !important;
+    }
+
+    .padding_right {
+        padding-right: 15px !important;
+    }
+
+    /* --- Fix for row no-gutters on small screens --- */
+    .no-padding {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* --- Expo/CTA Buttons --- */
+    .expo a,
+    .expo1 a,
+    .expo2 a {
+        font-size: 14px !important;
+        padding: 5px 15px !important;
+        min-width: 100px !important;
+    }
+
+    .btn_more {
+        height: 30px !important;
+        font-size: 14px !important;
+    }
+
+    .dest-btn,
+    .ourser-btn {
+        margin-top: 12px !important;
+    }
+}
+
+
+/* ==========================================================================
+   SMALL MOBILE (max-width: 480px)
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+
+    /* --- Header --- */
+    .logo {
+        width: 50% !important;
+    }
+
+    .header-logo img {
+        width: 85px !important;
+    }
+
+    .left {
+        width: 18% !important;
+    }
+
+    /* --- Hero --- */
+    .hero-title h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .text-video h1 {
+        font-size: 22px !important;
+    }
+
+    .home-banner span {
+        font-size: 1rem !important;
+    }
+
+    .banner {
+        height: 65vw !important;
+    }
+
+    /* --- Video --- */
+    video#video-slider-1 {
+        height: 50vh !important;
+    }
+
+    /* --- Content --- */
+    .trips-text h1 {
+        font-size: 1.5em !important;
+    }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .texti-section .texti-inner h2 {
+        font-size: 1.2rem !important;
+    }
+
+    /* --- Services Cards --- */
+    .owl-carousel1 .desti-img .card {
+        height: 250px !important;
+    }
+
+    /* --- Testimonial --- */
+    .carousel .carousel-item {
+        min-height: 250px !important;
+    }
+
+    .testi_main_box h4 {
+        font-size: 17px !important;
+        line-height: 24px !important;
+    }
+
+    /* --- Newsletter / Footer Form --- */
+    .news-cont {
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    /* --- Marquee --- */
+    .marquee {
+        height: 70px !important;
+    }
+
+    .track .content {
+        font-size: 40px !important;
+        margin: 10px !important;
+    }
+
+    /* --- About --- */
+    .about-h h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* --- Cookie --- */
+    .cookie .cookie-p p {
+        font-size: 11px !important;
+    }
+
+    /* --- Inspired Boxes --- */
+    .inspired_box {
+        height: 220px !important;
+    }
+
+    .inspired_box .content h3 {
+        font-size: 17px !important;
+        line-height: 22px !important;
+    }
+
+    /* --- Contact Form --- */
+    .inner-f h3 {
+        font-size: 1.5em !important;
+    }
+
+    /* --- Payment page hero title --- */
+    .hero-title h2[style*="font-size: 48px"],
+    .hero-title h2[style*="font-size:48px"] {
+        font-size: 1.5rem !important;
+    }
+}
+
+
+/* ==========================================================================
+   LANDSCAPE ORIENTATION FIXES (Tablet/Mobile)
+   ========================================================================== */
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+
+    .banner {
+        height: 50vw !important;
+    }
+
+    video#video-slider-1 {
+        height: 50vh !important;
+    }
+
+    .text-video {
+        top: 40% !important;
+    }
+
+    .marquee {
+        height: 120px !important;
+    }
+
+    .track .content {
+        font-size: 70px !important;
+    }
+
+    .carousel {
+        width: 80% !important;
+    }
+
+    .carousel-control-prev {
+        right: 18rem !important;
+        left: auto !important;
+    }
+
+    .carousel-control-next {
+        left: 18rem !important;
+        right: auto !important;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+
+    .banner {
+        height: 45vw !important;
+    }
+
+    video#video-slider-1 {
+        height: 40vh !important;
+    }
+
+    .carousel {
+        width: 100% !important;
+    }
+
+    .carousel-control-prev {
+        right: auto !important;
+        left: 10px !important;
+    }
+
+    .carousel-control-next {
+        left: auto !important;
+        right: 10px !important;
+    }
+
+    .hero-title h2 {
+        font-size: 2rem !important;
+    }
+
+    .mainu .inner-mainu .main-menu > ul > li {
+        font-size: 1rem !important;
+        padding: 0.3rem !important;
+    }
+
+    .inspired_box {
+        height: 200px !important;
+    }
+}
+
+
+/* ==========================================================================
+   IPAD PRO / LARGE TABLETS (1024px - 1199px)
+   ========================================================================== */
+@media only screen and (max-width: 1199px) and (min-width: 1025px) {
+
+    .left {
+        width: 14% !important;
+    }
+
+    .carousel {
+        width: 100% !important;
+    }
+
+    .carousel-control-prev {
+        right: 20rem !important;
+    }
+
+    .carousel-control-next {
+        left: 20rem !important;
+    }
+
+    .contact {
+        font-size: 14px !important;
+        height: 45px !important;
+    }
+
+    .about_main2 {
+        padding: 25px 30px !important;
+    }
+
+    .about_main4 {
+        padding: 25px 30px !important;
+    }
+
+    .about_main5 {
+        padding: 25px 30px !important;
+    }
+
+    .texti-section .texti-inner {
+        padding: 40px 50px !important;
+    }
+}

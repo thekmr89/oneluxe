@@ -1,0 +1,350 @@
+.hero-title h2 {
+    font-size: 6.5rem;
+    line-height: 0.8em;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.hero-title .bottom-head {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    line-height: 1.4;
+    color: #379c8a;
+}
+
+.about-cont {
+    padding: 60px 0 0px 0;
+}
+
+.about-cont .container {
+    padding-top: 40px;
+}
+
+.about-text p {
+    padding-top: 0px;
+    font-size: 1.25rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+.about-text {
+    width: 70%;
+    margin: auto;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.trips-bg .inner-section {
+    padding: 0px;
+}
+
+.about-h h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about-h {
+    text-align: left;
+}
+
+.innner-content {
+    overflow: hidden;
+}
+
+.about-img .inner-img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about_main {
+    min-height: 39.4vw;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.about_main .about_p {
+    text-align: center;
+}
+
+.res-trav {
+    width: 100%;
+    /*background: green;*/
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+.res-trav img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.trips-rsp {
+    padding: 0px 0 0px 0px;
+}
+
+.litt-trav img {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+}
+
+.litt-trav {
+    width: 100%;
+    height: 227px;
+}
+
+.trav-video {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.trav-video2 {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.trav-video img {
+    width: 100%;
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 0 !important;
+}
+
+.exper-cont {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 27px 27px 0px 27px;
+}
+
+.content button {
+    width: 100%;
+    padding: 7px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.read-more {
+    color: white;
+}
+
+.litt-videos {
+    text-align: center;
+}
+
+.litt-videos h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.dest-btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.expo {
+    padding: 0px;
+}
+
+.expo a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #000000;
+    font-weight: 500;
+    border: 1px solid black;
+    min-width: 133px;
+}
+
+.experiences-box {
+    position: relative;
+    bottom: 0px;
+}
+
+.play-button-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+
+    #circle-play-b {
+        cursor: pointer;
+        pointer-events: auto;
+
+        svg {
+            width: 70px;
+            /*height: 100px;*/
+            fill: #fff;
+            stroke: #fff;
+            cursor: pointer;
+            background-color: rgba(black, 0.2);
+            border-radius: 50%;
+            opacity: 0.9;
+        }
+    }
+}
+
+
+        .PopShwMnVriBkle,
+        .PopShwMnVriBklehmshw {
+            position: fixed;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, .8);
+            z-index: 10;
+            bottom: 0;
+            top: 0;
+            display: none;
+        }
+
+        .PopShwMnVriBkle .SurciseSecSwn,
+        .PopShwMnVriBklehmshw .SurciseSecSwn {
+            position: absolute;
+            width: 390px;
+            background: #fff;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .PopShwMnVriBkle .SurciseSecSwn .clseShw,
+        .PopShwMnVriBklehmshw .SurciseSecSwn .clseShw {
+            position: absolute;
+            top: 0;
+            right: 13px;
+            top: 13px;
+            cursor: pointer;
+            width: 20px;
+        }
+
+        .PopShwMnVriBkle .SurciseSecSwn h5,
+        .PopShwMnVriBklehmshw .SurciseSecSwn h5 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .PopShwMnVriBkle .SurciseSecSwn a,
+        .PopShwMnVriBklehmshw .SurciseSecSwn a {
+            color: #f17011;
+            text-decoration: none;
+        }
+
+
+
+        .cheack input {
+            margin-left: -20px;
+        }
+
+        .check input {
+            margin-top: -35px;
+        }
+
+        .check {
+            width: 70%;
+            font-size: 14px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .btn-2:hover a {
+            color: black;
+            background: white;
+        }
+
+        .btn-2 {
+            padding: 12px 25px !important;
+            border: 1px solid rgb(255 255 255 / 50%);
+            color: white !important;
+            font-size: 13px !important;
+            line-height: 14px;
+            letter-spacing: 1px;
+            position: relative;
+            color: white;
+            z-index: 0;
+        }
+
+        .form-inline .form-group {
+            width: 33%;
+        }
+
+        .form-inline {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -ms-flex-align: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .form-inline input[type=email] {
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid rgb(255 255 255 / 50%);
+            border-radius: 0;
+            padding: 13px 13px 13px 0 !important;
+            color: #FFFFFF;
+            outline: #000000;
+            font-size: 15px !important;
+            line-height: 16px;
+            letter-spacing: .5px;
+            width: 100%;
+        }
+
+        .news-cont {
+            color: white;
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 35px;
+        }
+
+        .news-latter {
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            padding: 64px 30px 62px 30px;
+            background: #000000;
+        }
+
+        .group-aff {
+            text-align: center;
+            padding-bottom: 20px;
+            color: white;
+        }
