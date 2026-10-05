@@ -17,11 +17,12 @@
     <meta name="keywords" content=" " />
     <!-- css****** -->
     <link rel="icon" href="images/favicon.jpg" type="image/png" sizes="16x16">
-    <link href="css/custom_style.css" type="text/css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="{{asset('css/custom_style.css')}}?v={{ file_exists(public_path('css/custom_style.css')) ? filemtime(public_path('css/custom_style.css')) : time() }}" type="text/css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css')}}" type="text/css" rel="stylesheet">
+    <link href="{{asset('style.css')}}?v={{ file_exists(public_path('style.css')) ? filemtime(public_path('style.css')) : time() }}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+    <link href="{{asset('css/responsive-fixes.css')}}?v={{ file_exists(public_path('css/responsive-fixes.css')) ? filemtime(public_path('css/responsive-fixes.css')) : time() }}" type="text/css" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/futura-font@1.0.0/styles.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- New Global site tag (gtag.js) - Google Analytics -->
@@ -51,13 +52,6 @@
         h5,
         h6 {
             font-family: "Futura Book" !important;
-        }
-
-        .client-logo-bg {
-            background-color: #000;
-            padding: 40px 0 50px 0;
-            position: relative;
-            z-index: 0;
         }
 
         p.desination_text {
@@ -607,34 +601,7 @@
     justify-content: space-around;
     text-align: center;
     align-items: center;
-        }
-            .btn-top {
-                position: fixed;
-                bottom: 50px;
-                right: 10px;
-                border: 1px solid black;
-                height: 41px;
-                width: 41px;
-                text-align: center;
-                border-radius: 50px;
-                background: black;
-                right: -200px;
-                visibility: hidden;
-                opacity: 0;
-                z-index: 99;
-                transition: all 1s ease;
-            }
-
-            .btn-visible {
-                visibility: visible;
-                opacity: 1;
-                right: 25px;
-            }
-
-            .btn-top img {
-                width: 100%;
-                cursor: pointer;
-            }
+        }
 
             .IqryFrmBx-Wppr .Clm-sm-7 .IqryFrmBx .title h2 {
                 display: block;
@@ -834,25 +801,6 @@
             width: 100%;
         }
 
-        .news-cont {
-            color: white;
-            font-size: 21px;
-            font-weight: 400;
-            line-height: 35px;
-        }
-
-        .news-latter {
-            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-            padding: 64px 30px 62px 30px;
-            background: #000000;
-        }
-
-        .group-aff {
-            text-align: center;
-            padding-bottom: 20px;
-            color: white;
-        }
-
         .owl-carousel .owl-stage {
             width: 100%;
             display: flex;
@@ -862,91 +810,7 @@
 
     </style>
 
-    <style>
-        .footers {
-            border-top: 1px #dedede solid;
-            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-            padding: 50px 30px 50px 30px;
-        }
-
-        .f-list-item .list-item {
-            list-style: none;
-            padding: 0px 0px;
-        }
-
-        .f-list-item {
-            padding-left: 0px;
-        }
-
-        .f-list-item .list-item a {
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 500;
-            text-transform: none;
-            line-height: 16px;
-            letter-spacing: .5px;
-            color: black;
-            transition: all 0.2s ease
-        }
-
-        .f-list-item .list-item a:hover {
-            margin-left: 5px;
-            border-bottom: 3px solid #FFA8B0;
-        }
-
-        .f-heading {
-            font-size: 1rem;
-            color: #000;
-            font-weight: 600;
-        }
-
-        .footer-logo {
-            /*height:250px;*/
-            /*width:250px;*/
-        }
-
-        .footer-logo img {
-            width: 125px;
-            object-fit: cover;
-        }
-
-    </style>
-
-    <style>
-        .copy-itm {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            list-style: none;
-        }
-
-        .copy-itm {
-            padding-left: 0px;
-            margin: 0px !important;
-        }
-
-        .copywrite {
-            background: white;
-            padding: 10px 0 10px 0;
-            border-top: 1px #dedede solid;
-            color: black;
-            text-align: center;
-        }
-
-        .copy-itm .list-itm span {
-            color: black;
-            font-weight: 100;
-            padding-left: 24px;
-            font-size: 12px;
-        }
-
-        .footer-cent {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center
-        }
+    <style>
 
         .social {
             display: flex;

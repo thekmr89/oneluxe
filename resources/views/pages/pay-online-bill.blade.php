@@ -355,7 +355,7 @@
  <div class="container">
      <div class="row">
         <div class="col-sm-5">
-            <div class="left-side">
+            <div class="left-side text-md-start text-center">
                 <div class="top-section">
                     <h2>Corporate Office Address</h2>
                     <p>Unit No 701 to 708, Tower D, Global Business
@@ -363,11 +363,11 @@
                 </div>
                 <div class="top-section">
                     <h2>Write us</h2>
-                    <a href="mailto:info@farandbeyond.in">info@farandbeyond.in</a>
+                    <p><a href="mailto:info@farandbeyond.in">info@farandbeyond.in</a></p>
                 </div>
                 <div class="top-section">
                     <h2>Call Us</h2>
-                    <a href="tel:+91 9818 401 791">+91 9818 401 791</a>
+                    <p><a href="tel:+91 9818 401 791">+91 9818 401 791</a></p>
                 </div>
 
             </div>
@@ -501,8 +501,6 @@
          position: relative;
      }
 
-      
-
      .IqryFrmBx-Wppr .Clm-sm-7 {
          flex: 0 70%;
          max-width: 70%;
@@ -604,8 +602,6 @@
          text-transform: uppercase;
      }
 
-
-
      .cheack input {
          margin-left: -20px;
      }
@@ -674,25 +670,6 @@
          width: 100%;
      }
 
-     .news-cont {
-         color: white;
-         font-size: 21px;
-         font-weight: 400;
-         line-height: 35px;
-     }
-
-     .news-latter {
-         transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-         padding: 64px 30px 62px 30px;
-         background: #000000;
-     }
-
-     .group-aff {
-         text-align: center;
-         padding-bottom: 20px;
-         color: white;
-     }
-
      .cheack input {
          margin-left: -20px;
      }
@@ -753,129 +730,11 @@
          width: 100%;
      }
 
-     .news-cont {
-         color: white;
-         font-size: 21px;
-         font-weight: 400;
-         line-height: 35px;
-     }
-
-     .news-latter {
-         transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-         padding: 64px 30px 62px 30px;
-         background: #000000;
-     }
-
-     .group-aff {
-         text-align: center;
-         padding-bottom: 20px;
-         color: white;
-     }
-
      .owl-carousel .owl-stage {
          width: 100%;
          display: flex;
          align-items: center;
          justify-content: center;
-     }
-
-     .footers {
-         border-top: 1px #dedede solid;
-         transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-         padding: 50px 30px 50px 30px;
-     }
-
-     .f-list-item .list-item {
-         list-style: none;
-         padding: 0px 0px;
-     }
-
-     .f-list-item {
-         padding-left: 0px;
-     }
-
-     .f-list-item .list-item a {
-         text-decoration: none;
-         font-size: 16px;
-         font-weight: 500;
-         text-transform: none;
-         line-height: 16px;
-         letter-spacing: .5px;
-         color: black;
-         transition: all 0.2s ease
-     }
-
-     .f-list-item .list-item a:hover {
-         margin-left: 5px;
-         border-bottom: 3px solid #FFA8B0;
-     }
-
-     .f-heading {
-         font-size: 1rem;
-         color: #000;
-         font-weight: 600;
-     }
-
-     .footer-logo {
-         /*height:250px;*/
-         /*width:250px;*/
-     }
-
-     .footer-logo img {
-         width: 125px;
-         object-fit: cover;
-     }
-
-     .btn-top {
-         position: fixed;
-         bottom: 40px;
-         right: 10px;
-         border: 1px solid black;
-         height: 41px;
-         width: 41px;
-         text-align: center;
-         border-radius: 50px;
-         background: black;
-     }
-
-     .btn-top img {
-         width: 100%;
-         cursor: pointer;
-     }
-
-     .copy-itm {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         text-align: center;
-         list-style: none;
-     }
-
-     .copy-itm {
-         padding-left: 0px;
-         margin: 0px !important;
-     }
-
-     .copywrite {
-         background: white;
-         padding: 10px 0 10px 0;
-         border-top: 1px #dedede solid;
-         color: black;
-         text-align: center;
-     }
-
-     .copy-itm .list-itm span {
-         color: black;
-         font-weight: 100;
-         padding-left: 24px;
-         font-size: 12px;
-     }
-
-     .footer-cent {
-         display: flex;
-         justify-content: center;
-         text-align: center;
-         align-items: center
      }
 
      .social {

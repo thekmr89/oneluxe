@@ -20,60 +20,24 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/icon/facivon/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/icon/facivon/favicon-16x16.png')}}">
     <link rel="manifest" href="{{asset('images/icon/facivon/favicon.ico')}}">
-    <link href="{{asset('css/custom_style.css')}}" type="text/css" rel="stylesheet">
+    <link href="{{asset('css/custom_style.css')}}?v={{ file_exists(public_path('css/custom_style.css')) ? filemtime(public_path('css/custom_style.css')) : time() }}" type="text/css" rel="stylesheet">
     <link href="{{asset('css/bootstrap.min.css')}}" type="text/css" rel="stylesheet">
     <link href="{{asset('fonts/all.min.css')}}" type="text/css" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="{{asset('style.css')}}" type="text/css" rel="stylesheet">
+    <link href="{{asset('style.css')}}?v={{ file_exists(public_path('style.css')) ? filemtime(public_path('style.css')) : time() }}" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
-    <link href="{{asset('css/responsive-fixes.css')}}" type="text/css" rel="stylesheet">
+    <link href="{{asset('css/responsive-fixes.css')}}?v={{ file_exists(public_path('css/responsive-fixes.css')) ? filemtime(public_path('css/responsive-fixes.css')) : time() }}" type="text/css" rel="stylesheet">
+    @yield('css')
     <!---->
 
     <style>
-        @font-face {
-          font-family: 'Futura-Book';
-          src: url('/fonts/Futura-Book.woff2') format('woff2'),
-               url('/fonts/Futura-Book.woff') format('woff');
-          font-weight: normal;
-          font-style: normal;
-          font-display: swap;
-        }
-        @font-face {
-          font-family: 'Futura Book';
-          src: url('/fonts/Futura-Book.woff2') format('woff2'),
-               url('/fonts/Futura-Book.woff') format('woff');
-          font-weight: normal;
-          font-style: normal;
-          font-display: swap;
-        }
-        
-        body {
-          font-family: 'Futura-Book', 'Futura Book', sans-serif !important;
-        }
-        p {
-          font-family: "Futura Book" !important;
-        }
             /*new css all pages*/
             .h3 h2{
             font-weight: 500;
         }
         .trips-text h2{
-            margin-bottom: 0px!important;
-            margin-top: 10px!important;
-            color: #77a3ab !important;
+         color: var(--secondary-color); 
         }
-        .trips-text p{
-         padding-bottom: 14px;
-        }
-        .trips-text h2 span {
-            color:#77a3ab!important;
-        }
-        .texti-inner h2 span  {
-            color:#77a3ab!important;
-        }
-        .dest-heading h2 ,.why-choose h2 {
-             color:#77a3ab!important;
-        } 
          body {
             background-color: #fffaf0;
         }
@@ -142,13 +106,6 @@
                     to {
                       transform: translateX(-50%);
                     }
-                  }
-            
-                  .client-logo-bg {
-                    background-color: #000;
-                    padding: 40px 0 50px 0;
-                    position: relative;
-                    z-index: 0;
                   }
             
                   p.desination_text {
@@ -442,13 +399,6 @@
                  .video{
                      position:relative;
                  }
-                  .trips-bg {
-                    padding: 10px 0 60px 0;
-                    /*background-image: url(https://indiaforworld.com/design2/images/Backpanel.jpg);*/
-                    /*background-size:contain;*/
-                    /*background-repeat:no-repeat;*/
-                    /*background-clip:content-box;*/
-                  }
             
                   .logo {
                     width: 27%;
@@ -659,27 +609,12 @@
               .cook {
                   padding:22px 11px!important;
               }
-              .inner_img_text1{
-                  position:relative!important;
-                  padding: 30px 30px 30px 30px!important;
-              }
               .top-features {
                 order: 2;
               }
             
               .item-brand {
                 order: 1;
-              }
-              p{
-                  1rem;
-              }
-              .text-video {
-              text-align: center;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              width:100%;
               }
               .trips-text{
                   width:100%!important;
@@ -943,7 +878,7 @@
                             <div class="checkbox">
                                 <!--<label class="check"> </label>-->
                                 <input type="checkbox" required>
-                                <p style="font-size:1rem!important; color: white; margin-top:10px;">I have read and accept the <a href="https://farandbeyond.in/privacy-policy" style="text-decoration: underline;color: white;">Privacy and Data Protection Policy</a>. </p>
+                                <p style="font-size:1rem!important; color: white; margin-top:18px;">I have read and accept the <a href="https://farandbeyond.in/privacy-policy" style="text-decoration: underline;color: white;">Privacy and Data Protection Policy</a>. </p>
 
                             </div>
                         </form>
@@ -1109,7 +1044,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-12 text-center footer-cent" style="font-size:14px;"><span>© {{ \Carbon\Carbon::now()->year }} Oneluxe. All Rights Reserved.</span>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 text-left footer-cent">
-                        <ul class="copy-itm" st>
+                        <ul class="copy-itm">
                             <li class="list-itm">
                                 <a href="privacy-policy#tab_payment">
                                     <span class="">Privacy Policy</span>
@@ -1162,85 +1097,6 @@
         </section>
     </footer>
     <!--footer end-->
-    <style>
-        .f-heading {
-        font-size: 1rem;
-        color: #77a3ab!important;
-        font-weight: 600;
-    }
-        .cook{
-             width: 100%;
-             background:#f0f0ea!important;
-             padding:8px 70px;
-             position:fixed;
-             z-index:1000;
-             bottom:0;
-             opacity: 0;
-          transform: translateY(100%);
-          transition: all 500ms ease-out;
-            }
-           .cookie{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center
-             position: fixed;
-             flex-wrap: wrap;
-            }
-            .cookie .cookie-p p{
-                color:#495057!important;
-                margin:0px!important;
-                font-size:15px!important;
-                font-weight:500!important;
-            }
-            .cookie-btn a{
-            width: 100%;
-            padding: 7px 15px;
-            background-color: #77a3ab;
-            border-radius: 5px;
-            color: #fff!important;
-            font-size: 14px;
-            text-decoration:none;
-            font-weight:500!important;
-            }
-        .cookie-alert.show {
-          opacity: 1;
-          transform: translateY(0%);
-          transition-delay: 1000ms;
-        }
-        
-        
-        /* crousel css starting */
-        .vert .carousel-item-next.carousel-item-left,
-        .vert .carousel-item-prev.carousel-item-right {
-            -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-        }
-        
-        .vert .carousel-item-next,
-        .vert .active.carousel-item-right {
-            -webkit-transform: translate3d(0, 100%, 0);
-                    transform: translate3d(0, 100% 0);
-        }
-        
-        .vert .carousel-item-prev,
-        .vert .active.carousel-item-left {
-        -webkit-transform: translate3d(0,-100%, 0);
-                transform: translate3d(0,-100%, 0);
-        }
-        .carousel-item {
-            transition-duration: 2s;
-        }
-        /* end crousel css */
-        
-        
-    /*footer botton hover effect css*/
-    .btn-2:hover {
-    color: #fff;
-    background: #77a3ab;
-    }
-    /*End footer btn css*/
-    </style>
     <!--cookies policy end-->
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>

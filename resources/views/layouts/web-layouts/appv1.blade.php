@@ -15,12 +15,13 @@
     <meta name="description" content=" " />
     <meta name="keywords" content=" " />
     <!-- css****** -->
-    <link href="css/custom_style.css" type="text/css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{asset('css/custom_style.css')}}?v={{ file_exists(public_path('css/custom_style.css')) ? filemtime(public_path('css/custom_style.css')) : time() }}" type="text/css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css')}}" type="text/css" rel="stylesheet">
+    <link href="{{asset('style.css')}}?v={{ file_exists(public_path('style.css')) ? filemtime(public_path('style.css')) : time() }}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+    <link href="{{asset('css/responsive-fixes.css')}}?v={{ file_exists(public_path('css/responsive-fixes.css')) ? filemtime(public_path('css/responsive-fixes.css')) : time() }}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {}
 
@@ -77,13 +78,6 @@
             to {
                 transform: translateX(-50%);
             }
-        }
-
-        .client-logo-bg {
-            background-color: #ffffff;
-            padding: 40px 0 50px 0;
-            position: relative;
-            z-index: 0;
         }
 
         p.desination_text {
@@ -483,7 +477,6 @@
             /*border-radius: 10px;*/
             cursor: pointer;
         }
-
 
         .FrBrighShw {
             /*width: 40px;*/
@@ -1082,72 +1075,8 @@
             width: 100%;
         }
 
-        .news-cont {
-            color: white;
-            font-size: 21px;
-            font-weight: 400;
-            line-height: 35px;
-        }
-
-        .news-latter {
-            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-            padding: 64px 30px 62px 30px;
-            background: #000000;
-        }
     </style>
-    <style>
-        .footers {
-            border-top: 1px #dedede solid;
-            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-            padding: 90px 30px 100px 30px;
-        }
 
-        .f-list-item .list-item {
-            list-style: none;
-        }
-
-        .f-list-item {
-            padding-left: 0px;
-        }
-
-        .f-list-item .list-item a {
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: 500;
-            text-transform: none;
-            line-height: 16px;
-            letter-spacing: .5px;
-            color: black;
-        }
-
-        .f-heading {
-            font-size: 1rem;
-        }
-    </style>
-    <style>
-        .copy-itm {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            text-align: center;
-            list-style: none;
-        }
-
-        .copywrite {
-            background: white;
-            padding: 10px 0 10px 0;
-            border-top: 1px #dedede solid;
-            color: black;
-            text-align: center;
-        }
-
-        .copy-itm .list-itm span {
-            color: black;
-            font-weight: 100;
-            padding-left: 24px;
-            font-size: 12px;
-        }
-    </style>
 </head>
 
 <body>
@@ -1199,12 +1128,8 @@
         </div>
     </header>
 
-
-
-
     @yield('page-content')
 
-    <!--new footer desine-->
     <div class="client-logo-bg">
         <div class="client-text" style="display:none;">
             <h3 class="border_line1">

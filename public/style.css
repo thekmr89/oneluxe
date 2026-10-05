@@ -1,27 +1,60 @@
-
 :root {
     --main-color: #5557b4;
-    --font-primary: 'Futura-Book', 'Futura Book', sans-serif;
+    --font-primary: 'Futura-Book', 'Futura Book', 'FuturaBT-Book', 'Futura', sans-serif;
 }
 
 @font-face {
     font-family: 'Futura-Book';
-    src: url('fonts/Futura-Book.woff2') format('woff2'),
+    src: url('/fonts/Futura-Book.woff2') format('woff2'),
+        url('/fonts/Futura-Book.woff') format('woff'),
+        url('/fonts/FuturaBT-Book.ttf') format('truetype'),
+        url('fonts/Futura-Book.woff2') format('woff2'),
         url('fonts/Futura-Book.woff') format('woff'),
-        url('Futura-Book.woff2') format('woff2'),
-        url('Futura-Book.woff') format('woff');
-    font-weight: normal;
+        url('fonts/FuturaBT-Book.ttf') format('truetype'),
+        url('/Futura-Book.woff2') format('woff2'),
+        url('/Futura-Book.woff') format('woff'),
+        url('/FuturaBT-Book.ttf') format('truetype');
+    font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Futura Book';
-    src: url('fonts/Futura-Book.woff2') format('woff2'),
+    src: url('/fonts/Futura-Book.woff2') format('woff2'),
+        url('/fonts/Futura-Book.woff') format('woff'),
+        url('/fonts/FuturaBT-Book.ttf') format('truetype'),
+        url('fonts/Futura-Book.woff2') format('woff2'),
         url('fonts/Futura-Book.woff') format('woff'),
-        url('Futura-Book.woff2') format('woff2'),
-        url('Futura-Book.woff') format('woff');
-    font-weight: normal;
+        url('fonts/FuturaBT-Book.ttf') format('truetype'),
+        url('/Futura-Book.woff2') format('woff2'),
+        url('/Futura-Book.woff') format('woff'),
+        url('/FuturaBT-Book.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('/fonts/Futura-Book.woff2') format('woff2'),
+        url('/fonts/Futura-Book.woff') format('woff'),
+        url('/fonts/FuturaBT-Book.ttf') format('truetype'),
+        url('fonts/Futura-Book.woff2') format('woff2'),
+        url('fonts/Futura-Book.woff') format('woff'),
+        url('fonts/FuturaBT-Book.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaBT-Book';
+    src: url('/fonts/FuturaBT-Book.ttf') format('truetype'),
+        url('/fonts/Futura-Book.woff2') format('woff2'),
+        url('/fonts/Futura-Book.woff') format('woff'),
+        url('fonts/FuturaBT-Book.ttf') format('truetype');
+    font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
@@ -30,25 +63,89 @@
 *,
 *::before,
 *::after {
-    font-family: 'Futura-Book', 'Futura Book', sans-serif;
+    font-family: 'Futura-Book', 'Futura Book', 'FuturaBT-Book', 'Futura', sans-serif;
 }
 
-html, body {
-    font-family: 'Futura-Book', 'Futura Book', sans-serif !important;
+html,
+body {
+    font-family: 'Futura-Book', 'Futura Book', 'FuturaBT-Book', 'Futura', sans-serif !important;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button, select, textarea, li, dt, dd, blockquote, th, td, div {
-    font-family: 'Futura-Book', 'Futura Book', sans-serif !important;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+label,
+input,
+button,
+select,
+textarea,
+li,
+dt,
+dd,
+blockquote,
+th,
+td,
+div {
+    font-family: 'Futura-Book', 'Futura Book', 'FuturaBT-Book', 'Futura', sans-serif !important;
 }
 
 /* Ensure font icons preserve their icon font families */
-.fa, .fas, .far, .fab, .fal, .fad, .material-icons, [class*="fa-"], [class^="fa-"], i[class*="fa"], i.fa, i.fas, i.far, i.fab {
+.fa,
+.fas,
+.far,
+.fab,
+.fal,
+.fad,
+.material-icons,
+[class*="fa-"],
+[class^="fa-"],
+i[class*="fa"],
+i.fa,
+i.fas,
+i.far,
+i.fab {
     font-family: var(--fa-style-family, "Font Awesome 6 Free", "FontAwesome", "Material Icons") !important;
 }
 
-/* ==========================================================================
-   Common Page Banner Component (Shared across all pages)
-   ========================================================================== */
+:root {
+    --secondary-color: #77a3ab;
+    --h2: 2rem;
+}
+
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.h2,
+h2 {
+    font-size: var(--h2) !important;
+}
+
+.lh-0 {
+    line-height: 0 !important;
+}
+
+body {
+    font-family: 'Futura-Book', 'Futura Book', 'FuturaBT-Book', 'Futura', sans-serif !important;
+}
+
+.bg-secondary-light {
+    background-color: #f0f0ea;
+}
+
+.desp-sec-A h2 {
+    color: var(--secondary-color);
+}
+
+
 .banner {
     width: 100%;
     height: 40vw;
@@ -62,7 +159,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button, select, textarea
     object-fit: cover;
     display: block;
 }
- 
+
 .top-area {
     width: 100%;
     background: #333;
@@ -254,22 +351,6 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button, select, textarea
     color: #fff;
 }
 
-.trips-bg {
-    padding: 50px 0 30px 0;
-}
-
-.trips-text {
-    width: 45%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    text-align: center;
-}
-
-.trips-text h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
-}
 
 /*.trips-text p {*/
 /**/
@@ -329,11 +410,6 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button, select, textarea
     color: #b2893d !important;
 }
 
-.client-logo-bg {
-    background-color: #000000;
-    padding: 40px 0 50px 0;
-}
-
 .client-logo-area {}
 
 .client-logo-area img {
@@ -352,7 +428,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button, select, textarea
 
 .box {
     background-color: rgb(229, 148, 43);
-    
+
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -516,11 +592,6 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button, select, textarea
     color: #c1aa7f;
 }
 
-.why-choose {}
-
-.why-choose img {
-    width: 200px;
-}
 
 .why-choose h1 {
     font-size: 45px;
@@ -619,24 +690,397 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button, select, textarea
     color: #b2893d;
 }
 
+/* ==========================================================================
+   Global Footer Components: Client Logos, Newsletter, Footers, Copywrite
+   ========================================================================== */
+
+/* --- 1. Client Logos / Group Affiliations (.client-logo-bg) --- */
+.client-logo-bg {
+    background-color: #000000;
+    padding: 40px 0 50px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.group-aff {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.group-aff h3 {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.inspired_section-1 {
+    width: 100%;
+}
+
+.inspired_slider1 .item {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.inspired_slider1 .item img {
+    max-height: 60px;
+    width: auto !important;
+    margin: 0 auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.inspired_slider1 .item img:hover {
+    opacity: 1;
+}
+
+/* --- 2. Newsletter Subscription (.news-latter) --- */
+.news-latter {
+    background: #000000;
+    padding: 64px 30px 62px 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.news-cont {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.news-desc {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.form-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.form-inline .form-group {
+    width: 33%;
+}
+
+.form-inline input[type="text"],
+.form-inline input[type="email"] {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+    padding: 13px 13px 13px 0 !important;
+    color: #ffffff;
+    outline: none !important;
+    font-size: 15px !important;
+    line-height: 16px;
+    letter-spacing: .5px;
+    width: 100%;
+}
+
+.form-inline input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-2 {
+    padding: 12px 25px !important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff !important;
+    font-size: 13px !important;
+    line-height: 14px;
+    letter-spacing: 1px;
+    background: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-2:hover,
+.btn-2:hover a {
+    color: #000000 !important;
+    background: #ffffff !important;
+}
+
+.news-latter .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    width: 100%;
+}
+
+.news-latter .checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.news-latter .checkbox p {
+    color: #ffffff;
+    font-size: 1rem !important;
+    margin: 0 !important;
+    flex: 1;
+    text-align: left;
+}
+
+.news-latter .checkbox a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* --- 3. Main Footer (.footers) --- */
+.footers {
+    border-top: 1px #dedede solid;
+    background: #ffffff;
+    padding: 50px 30px 30px 30px;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.f-heading {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.f-list-item {
+    padding-left: 0px;
+    list-style: none;
+    margin: 0;
+}
+
+.f-list-item .list-item {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 8px;
+}
+
+.f-list-item .list-item a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    line-height: 16px;
+    letter-spacing: .5px;
+    color: #000000;
+    transition: all 0.2s ease;
+}
+
+.f-list-item .list-item a:hover {
+    margin-left: 5px;
+    border-bottom: 3px solid #FFA8B0;
+    color: #000000;
+}
+
+.footer-logo img {
+    width: 125px;
+    object-fit: cover;
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 50px;
+    right: -200px;
+    border: 1px solid #77a3ab;
+    height: 41px;
+    width: 41px;
+    text-align: center;
+    border-radius: 50px;
+    background: #77a3ab;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.btn-top.btn-visible {
+    visibility: visible;
+    opacity: 1;
+    right: 25px;
+}
+
+.btn-top img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* --- 4. Copyright Bar (.copywrite) --- */
 .copywrite {
-    background: #393732;
-    padding: 10px 0 10px 0;
-    border-top: 1px #535049 solid;
-    color: #e0ded7;
+    background: #dbd4d4;
+    padding: 14px 0;
+    border-top: 1px #dedede solid;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.copywrite .row {
+    align-items: center;
+}
+
+.copy-itm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin: 0px !important;
+    gap: 6px 18px;
+}
+
+.copy-itm .list-itm {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.copy-itm .list-itm a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.copy-itm .list-itm a:hover {
+    color: #77a3ab;
+}
+
+.copy-itm .list-itm span {
+    color: inherit;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.copy-itm .list-itm a:hover span {
+    text-decoration: underline;
+}
+
+.footer-cent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* --- 5. Cookie Consent Banner (.cookie, .cook, .cookie-alert) --- */
+.cook {
+    width: 100%;
+    background: #f0f0ea !important;
+    padding: 12px 50px;
+    position: fixed;
+    z-index: 1050;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1), opacity 400ms ease;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.cookie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 15px;
+}
+
+.cookie .cookie-p {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.cookie .cookie-p p {
+    color: #495057 !important;
+    margin: 0px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.5;
+}
+
+.cookie .cookie-p p a {
+    color: #77a3ab !important;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.cookie-btn {
+    flex: 0 0 auto;
+}
+
+.cookie-btn a {
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 13.5px;
+    text-decoration: none;
+    font-weight: 500 !important;
+    display: inline-block;
+    transition: all 0.2s ease;
+    white-space: nowrap;
     text-align: center;
 }
 
-.copywrite a {
-    color: #e0ded7;
-    text-decoration: none;
-    font-weight: bold;
+.cookie-btn:not(.accept-cookies) a {
+    background-color: transparent;
+    border: 1.5px solid #77a3ab;
+    color: #77a3ab !important;
 }
 
-.copywrite a:hover {
-    color: #b2893d;
-    text-decoration: none;
-    font-weight: bold;
+.cookie-btn:not(.accept-cookies) a:hover {
+    background-color: rgba(119, 163, 171, 0.12);
+}
+
+.cookie-btn.accept-cookies a {
+    background-color: #77a3ab;
+    border: 1.5px solid #77a3ab;
+    color: #fff !important;
+}
+
+.cookie-btn.accept-cookies a:hover {
+    background-color: #5c878e;
+    border-color: #5c878e;
+    color: #fff !important;
+}
+
+.cook.cookie-alert.show,
+.cookie-alert.show {
+    opacity: 1 !important;
+    transform: translateY(0%) !important;
+    transition-delay: 500ms;
+}
+
+/* --- Vertical Carousel (.vert) --- */
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.vert.carousel .carousel-item,
+.carousel1.vert .carousel-item {
+    transition-duration: 2s;
 }
 
 .testi_section {
@@ -1097,17 +1541,9 @@ ul#tabs-nav li {
         left: 0%;
     }
 
-    .trips-text {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        text-align: center;
-    }
-
     /*.trips-text p {*/
     /**/
-        
+
     /*}*/
 
     .text-video h1 {
@@ -1167,9 +1603,6 @@ ul#tabs-nav li {
         font-size: 20px;
     }
 
-    .why-choose img {
-        width: 100px;
-    }
 
     .why-choose p {
         font-size: 15px;
@@ -1231,9 +1664,6 @@ ul#tabs-nav li {
         padding: 45px 0 0px 0;
     }
 
-    .trips-bg {
-        padding: 10px 0 30px 0;
-    }
 
     .serviceBox .title {
         text-transform: uppercase;

@@ -102,24 +102,6 @@
     }
   }
   /* Newsletter Section */
-.news-latter {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 64px 30px 62px 30px;
-  background: #000000;
-}
-
-.news-cont {
-  color: white;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 35px;
-}
-
-.group-aff {
-  text-align: center;
-  padding-bottom: 20px;
-  color: white;
-}
 
 .form-inline {
   display: flex;
@@ -164,110 +146,12 @@
 }
 
 /* Footer Links and Layout */
-.footers {
-  border-top: 1px #dedede solid;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 50px 30px 0px 30px;
-}
-
-.f-list-item {
-  padding-left: 0px;
-}
-
-.f-list-item .list-item {
-  list-style: none;
-  padding: 0px 0px;
-}
-
-.f-list-item .list-item a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: none;
-  line-height: 16px;
-  letter-spacing: .5px;
-  color: black;
-  transition: all 0.2s ease;
-}
-
-.f-list-item .list-item a:hover {
-  margin-left: 5px;
-  border-bottom: 3px solid #FFA8B0;
-}
-
-.f-heading {
-  font-size: 1rem;
-  color: #000;
-  font-weight: 600;
-}
 
 /* Footer Logo */
-.footer-logo img {
-  width: 125px;
-  object-fit: cover;
-}
 
 /* Scroll to Top Button */
-.btn-top {
-  position: fixed;
-  bottom: 50px;
-  right: -200px;
-  border: 1px solid #77a3ab;
-  height: 41px;
-  width: 41px;
-  text-align: center;
-  border-radius: 50px;
-  background: #77a3ab;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 99;
-  transition: all 1s ease;
-}
-
-.btn-visible {
-  visibility: visible;
-  opacity: 1;
-  right: 25px;
-}
-
-.btn-top img {
-  width: 100%;
-  cursor: pointer;
-}
 
 /* Copywrite Section */
-.copywrite {
-    background: #dbd4d4;
-    padding: 10px 0;
-    border-top: 1px #dedede solid;
-    color: black;
-    text-align: center;
-}
-
-.copy-itm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  list-style: none;
-  flex-wrap: wrap;
-  padding-left: 0px;
-  margin: 0px !important;
-}
-
-.copy-itm .list-itm span {
-  color: black;
-  font-weight: 100;
-  padding-left: 24px;
-  font-size: 14px;
-}
-
-.footer-cent {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
 
 /* Carousel container if used in footer */
 .owl-carousel {
@@ -360,9 +244,6 @@ section h3 {
   }
 }
 
-
-
-
  .try-new-style {
     position: absolute;
     left: 2px;
@@ -431,7 +312,7 @@ section h3 {
 
  /*end hover effect*/
  </style>
-    <section class="hero" style="position:relative; ">
+    <div class="hero" style="position:relative; ">
         <div class="banner">
             <img src="{{asset($pageData['section1Image'] ?? '') }}" class="d-block w-100" alt="Luxury Travels Bali">
         </div>
@@ -444,7 +325,7 @@ section h3 {
                 </div>
             </div>
         </div>
-    </section>
+</div>
 
     <section class="trips-bg main1">
         <div class="container">
