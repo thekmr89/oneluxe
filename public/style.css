@@ -892,7 +892,7 @@ body {
     background: #77a3ab;
     visibility: hidden;
     opacity: 0;
-    z-index: 99;
+    z-index: 9999;
     transition: all 1s ease;
     cursor: pointer;
 }
@@ -915,7 +915,7 @@ body {
     border-top: 1px #dedede solid;
     color: #000000;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 62px;
     font-size: 14px;
 }
 
